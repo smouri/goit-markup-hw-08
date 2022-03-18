@@ -1,0 +1,45 @@
+.section-team {
+    background-color: $btnBgColor;
+    padding-top: 94px;
+    padding-bottom: 94px;
+        &__title {
+            margin-bottom: 50px;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 1.17;
+            text-align: center;
+            letter-spacing: 0.03em;
+        }
+        &__list {
+            display: flex;
+        }
+        &__item {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            flex-basis: 270px;
+            justify-content: flex-end;
+            background-color: $whiteColor;
+            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+            border-radius: 0px 0px 4px 4px;
+                &:not(:last-child) {
+                    margin-right: 30px;
+                }
+        }
+        &__box {
+            padding: 30px;
+        }
+        &__member {
+            text-align: center;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 1.18;
+        }
+        &__profesion {
+            margin-top: 10px;
+            text-align: center;
+            color: $secondaryTextColor;
+            font-size: 16px;
+            line-height: 1.18;
+        }
+}

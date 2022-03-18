@@ -1,0 +1,15 @@
+.button {
+    min-width: 200px;
+    max-width: 350px;
+    padding: 10px 32px;
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+    font-size: var(--font-size-medium);
+    line-height: 1.875;
+    letter-spacing: 0.06em;
+    color: $whiteColor;
+    cursor: pointer;
+    background-color: $accentColor;
+    border: none;
+    border-radius: 4px;
+}

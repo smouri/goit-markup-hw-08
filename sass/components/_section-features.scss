@@ -1,0 +1,50 @@
+.section-features {
+    color: $mainTextColor;
+    padding-top: 94px;
+    padding-bottom: 94px;
+        &__list {
+            display: flex;
+        }
+        &__item {
+            width: 270px;
+                &:not(:last-child) {
+                    margin-right: 30px;
+                }
+        }
+        &__icon-wrap {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 270px;
+            height: 120px;
+            margin-bottom: 30px;
+            background-color: $btnBgColor;
+            border-radius: 4px;
+        }
+        &__title {
+            color: $mainTextColor;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 1.14;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+        &__paragraphly {
+            color: $secondaryTextColor;
+            font-size: 14px;
+            line-height: 1.7;
+            letter-spacing: 0.03em;
+        }
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
