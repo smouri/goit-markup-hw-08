@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>WebStudio</title>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
@@ -12,24 +12,35 @@
 <body>
     <!-- Шапка сайта -->
     <header class="header">
-        <div class="container">   
-            <nav class="header-nav">
-                <a class="logo" lang="en" href=""><span class="blue-logo">Web</span>Studio</a>
-                <ul class="header-nav__list">
-                    <li class="header-nav__item"><a class="header-nav__link header-nav__link--current" href="./index.html">Студия</a></li>
-                    <li class="header-nav__item"><a class="header-nav__link" href="./portfolio.html">Портфолио</a></li>
-                    <li class="header-nav__item"><a class="header-nav__link" href="">Контакты</a></li>
+        <div class="container"> 
+            <a class="logo" lang="en" href=""><span class="blue-logo">Web</span>Studio</a>
+            <div class="menu-wrapper">
+                <nav class="header-nav">
+                    
+                    <ul class="header-nav__list">
+                        <li class="header-nav__item"><a class="header-nav__link header-nav__link--current"
+                                href="./index.html">Студия</a></li>
+                        <li class="header-nav__item"><a class="header-nav__link" href="./portfolio.html">Портфолио</a></li>
+                        <li class="header-nav__item"><a class="header-nav__link" href="">Контакты</a></li>
+                    </ul>
+                </nav>
+                <ul class="header-contacts">
+                    <li class="header-contacts__item"><a class="header-contacts__link" href="mailto:info@devstudio.com"><svg
+                                class="header-contacts__icon" width="16" height="12">
+                                <use href="./image/icons.svg#mail"></use>
+                            </svg>info@devstudio.com</a>
+                    </li>
+                    <li class="header-contacts__item"><a class="header-contacts__link" href="tel:+380961111111"><svg
+                                class="header-contacts__icon" width="10" height="16">
+                                <use href="./image/icons.svg#phone"></use>
+                            </svg>+38 096 111 11 11</a></li>
                 </ul>
-            </nav>
-            <ul class="header-contacts">
-                <li class="header-contacts__item"><a class="header-contacts__link" href="mailto:info@devstudio.com"><svg class="header-contacts__icon" width="16" height="12">
-                    <use href="./image/icons.svg#mail"></use>
-                </svg>info@devstudio.com</a>
-                </li>
-                <li class="header-contacts__item"><a class="header-contacts__link" href="tel:+380961111111"><svg class="header-contacts__icon" width="10" height="16">
-                    <use href="./image/icons.svg#phone"></use>
-                </svg>+38 096 111 11 11</a></li>
-            </ul>
+            </div>
+            <button class="modal-toggle__btn js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg class="modal-toggle__svg" width="40" height="40">
+                    <use href="./images/icons.svg#burger-icon"></use>
+                </svg>
+            </button>
         </div>
     </header>
     
@@ -438,7 +449,46 @@
             </form>
         </div>
     </div>
+    <div class="modal-toggle js-menu-container" id="mobile-menu">
+        <button type="button" class="modal-toggle__btn js-close-menu">
+            <svg class="modal-toggle__svg" width="40" height="40">
+                <use href="./images/icons.svg#menu-btn-icon"></use>
+            </svg>
+        </button>
+        <div class="menu-mobile">
+            <nav class="nav-mobile">
+                <ul class="nav-mobile__list">
+                    <li class="nav-mobile__item"><a class="nav-mobile__link nav-mobile__link--active common-link"
+                            href="./index.html">Студия</a></li>
+                    <li class="nav-mobile__item"><a class="nav-mobile__link common-link"
+                            href="./portfolio.html">Портфолио</a></li>
+                    <li class="nav-mobile__item"><a class="nav-mobile__link common-link" href="">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="contacts-mobile__wrapper">
+                <ul class="contacts-mobile">
+                    <li class="contacts-mobile__item">
+                        <a class="contacts__link-phone link common-link" href="tel:+380961111111">
+                            +38 096 111 11 11
+                        </a>
+                    </li>
+                    <li class="contacts-mobile__item">
+                        <a class="contacts__link-mobile link common-link" href="mailto:info@devstudio.com">
+                            info@devstudio.com
+                        </a>
+                    </li>
+                </ul>
+                <ul class="socials-mobile">
+                    <li class="socials-mobile__item"><a class="socials-mobile__link" href="">Instagram</a></li>
+                    <li class="socials-mobile__item"><a class="socials-mobile__link" href="">Twitter</a></li>
+                    <li class="socials-mobile__item"><a class="socials-mobile__link" href="">Facebook</a></li>
+                    <li class="socials-mobile__item"><a class="socials-mobile__link" href="">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>

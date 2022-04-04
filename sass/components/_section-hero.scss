@@ -12,6 +12,10 @@
     rgba(47, 48, 58, 0.4)
     ),
     url("../image/backgrounds/optimiz/bghero.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
         &__title {
             color: $whiteColor;
             margin: auto;
